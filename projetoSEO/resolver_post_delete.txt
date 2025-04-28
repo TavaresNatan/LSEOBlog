@@ -1,0 +1,1 @@
+salvar os posts em um array, ter um botao que printa o array no log, permitindo a copia do mesmo
