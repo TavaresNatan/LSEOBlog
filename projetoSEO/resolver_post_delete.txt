@@ -1,1 +1,11 @@
 salvar os posts em um array, ter um botao que printa o array no log, permitindo a copia do mesmo
+
+
+- criar um array com backup dos posts
+- download txt
+- criar um loader
+
+
+
+
+key tag do main handlePostSubmit

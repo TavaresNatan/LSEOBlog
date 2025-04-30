@@ -1,5 +1,10 @@
 console.log("main.js loaded");
 
+var backup_posts = [];
+
+
+
+
 // Main application code
 document.addEventListener("DOMContentLoaded", () => {
   console.log("main.js openned");
@@ -233,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
     confirmModal.style.display = "none";
   };
 
-  // Handle form submission for creating/editing posts
+  // serve pra lidar com o submit dos posts
   const handlePostSubmit = (e) => {
     e.preventDefault();
 
@@ -249,6 +254,10 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       // Create new post
       BlogPosts.createPost(postData);
+
+      //vai adicionar os dados do novo post num array
+      backup_posts.push(postData);
+      backup_posts.forEach((x) => console.log(x));
     }
 
     // Update posts list and close modal
@@ -287,7 +296,28 @@ document.addEventListener("DOMContentLoaded", () => {
       currentPostId = null;
     }
   };
-
+  
   // Initialize the app
   init();
 });
+
+//arrumar a formatação do texto
+function salvarBackup(nomeArquivo = 'backup.txt') {
+  
+var texto = `var backup_posts = [`;
+
+backup_posts.forEach((x) => {texto += `['${x.title}','${x.category}','${x.content}'],`});
+texto += "];";
+  // const texto = backup_posts.join('\n');
+  const blob = new Blob([texto], { type: 'text/plain' });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = nomeArquivo;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url);
+}

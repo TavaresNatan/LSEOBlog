@@ -29,7 +29,7 @@
         <ul class="nav-links">
           <li>
             <!-- melhorar o design -->
-            <button class="btn primary-btn">Log Posts</button>
+            <button class="btn primary-btn" onclick="salvarBackup('backup.txt')">Log Posts</button>
           </li>
           <li>
             <a href="#" class="nav-link active" data-section="blog">Blog</a>
@@ -57,7 +57,6 @@
 
         <div class="filter-container">
           <div class="filter-group">
-            <label for="category-filter">Filter by:</label>
             <select id="category-filter">
               <option value="all">All Categories</option>
               <option value="technology">Technology</option>
@@ -82,24 +81,17 @@
       <section id="blog-section" class="section active">
         <div id="posts-container" class="posts-grid">
           <div class="empty-state" id="empty-state">
-            <p>No posts yet. Create your first post!</p>
+            <p>Sem posts por enquanto...</p>
           </div>
         </div>
       </section>
 
       <!-- sessao de sobre a empresa -->
       <section id="about-section" class="section">
-        <h2>About Us</h2>
+        <h2>Sobre a LiveSEO</h2>
         <div class="about-content">
           <p>
-            Welcome to Midnight Thoughts, where ideas come alive in the quiet
-            hours of the night. Our platform is dedicated to sharing meaningful
-            stories, insights, and experiences across various topics.
-          </p>
-          <p>
-            Whether you're a tech enthusiast, a design aficionado, a traveler,
-            or someone who loves sharing personal experiences, this is your
-            space to express and connect.
+            esse é um texto sobre a empresa
           </p>
         </div>
       </section>
@@ -117,8 +109,7 @@
         <h2>Extra</h2>
         <div class="extra-content">
           <p>
-            This space is reserved for future content and features. Stay tuned
-            for updates!
+            Aqui vão ficar os webnars
           </p>
         </div>
       </section>
