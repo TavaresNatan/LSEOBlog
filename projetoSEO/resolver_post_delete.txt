@@ -1,9 +1,10 @@
 salvar os posts em um array, ter um botao que printa o array no log, permitindo a copia do mesmo
 
 
-- criar um array com backup dos posts
-- download txt
-- criar um loader
+- criar um array com backup dos posts - FEITO
+- download txt - FEITO
+- criar um loader - FEITO
+- fazer com que o delete apague o post do array var backup_posts = [];
 
 
 

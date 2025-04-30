@@ -11,10 +11,10 @@
   --color-danger-hover: #b55a6a;
   
   /* Category Colors */
-  --color-technology: #4caf50;
-  --color-design: #2196f3;
-  --color-personal: #ff9800;
-  --color-travel: #e91e63;
+  --color-seo: #4caf50;
+  --color-Curso-Estudo: #2196f3;
+  --color-Profissional: #ff9800;
+  --color-Outros: #e91e63;
   
   /* Spacing System (8px) */
   --spacing-xs: 8px;
@@ -317,23 +317,23 @@ select:focus, input:focus {
   text-transform: capitalize;
 }
 
-.technology {
-  background-color: var(--color-technology);
+.SEO {
+  background-color: var(--color-seo);
   color: #000;
 }
 
-.design {
-  background-color: var(--color-design);
+.Curso-Estudo {
+  background-color: var(--color-Curso-Estudo);
   color: #000;
 }
 
-.personal {
-  background-color: var(--color-personal);
+.Profissional {
+  background-color: var(--color-Profissional);
   color: #000;
 }
 
-.travel {
-  background-color: var(--color-travel);
+.Outros {
+  background-color: var(--color-Outros);
   color: #000;
 }
 
