@@ -56,14 +56,7 @@ const BlogPosts = (() => {
     }
     return null;
   };
-  // // Quando o botão de deletar é clicado
-  // document.getElementById('delete-post-btn').onclick = function() {
-  //   const postId = /* lógica para obter o ID do post */;
-  //   const confirmDeleteButton = document.getElementById('confirm-delete');
-  //   confirmDeleteButton.dataset.id = postId; // Define o ID do post no botão
-  //   // Lógica para abrir o modal
-  // };
-  // Delete a post
+  // Deletar um post
   const deletePost = (id) => {
     console.log("called");
     const posts = getPosts();

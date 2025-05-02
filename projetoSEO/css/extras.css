@@ -1,0 +1,17 @@
+.extra-item {
+    background-color: #111;
+    padding:30px;
+    margin: 20px 0 20px 0;
+    border-radius: 20px;
+}
+
+#extra-container h4{
+    margin-top: 20px;
+}
+
+#extra-container img{
+    border: 2px solid white;
+    border-radius:20px;
+    height: 358px;
+    width: 740px;
+}
